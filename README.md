@@ -93,6 +93,29 @@ The application uses only Python standard libraries. No external packages are re
   * Embedded Lyrics
   * Embedded Album Art
 
+View Audio Information (Technical):
+
+- Length: The total length of the song in seconds.
+- Bitrate: The data transmission rate of the audio, usually in kbps (kilobits per second). Mutagen can read Xing or LAME headers to accurately calculate the duration and bitrate in variable bitrate (VBR) MP3s.
+- Sample Rate: The number of audio samples taken per second, typically in Hz.
+- Bitrate Type: CBR or VBR
+- Channel Mode: Indicates whether the audio is Stereo, Mono, or Joint Stereo.
+- File Type: Confirmation that it is an MP3 file.
+
+View Metadata Information (ID3 Tags):
+
+- Title: The name of the song.
+- Artist: The artist or performer of the song.
+- Album: The name of the album the song belongs to.
+- Album Artist: The main artist on the album (useful for compilations).
+- Track Number: The song's position on the album.
+- Release Year: The year the song or album was released.
+- Genre: The musical style of the song.
+- Composer: The composer of the music.
+- Comments: Additional notes or comments.
+- Lyrics: The lyrics to the song.
+- Album Artwork (APIC or equivalent): The image embedded in the file.
+
 ## Running Tests
 
 This project includes unit tests to verify the functionality of the script. The tests use the standard `unittest` library and `unittest.mock` to simulate `ffprobe` output, so no external files or FFmpeg installation are required to run them.
