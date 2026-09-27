@@ -1,5 +1,12 @@
+import os
+import sys
 import unittest
 from unittest.mock import patch, MagicMock
+
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, PROJECT_ROOT)
+
 import mp3probe
 
 class TestMp3Probe(unittest.TestCase):
