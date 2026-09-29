@@ -1,6 +1,6 @@
-# MP3Probe utility in Python
+# mp3Probe utility in Python
 
-This repo contains an MP3Probe utility in Python code.
+This repo contains an `mp3probe` utility in Python code.
 
 This utility extracts information from an MP3 file, including:
 
